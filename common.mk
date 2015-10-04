@@ -59,7 +59,7 @@ PRODUCT_PACKAGES := \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
-    wifi.supplicant_scan_interval=15
+    wifi.supplicant_scan_interval=30
 
 # Gps
 PRODUCT_COPY_FILES += \
