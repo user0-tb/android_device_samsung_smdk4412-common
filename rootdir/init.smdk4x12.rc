@@ -158,6 +158,8 @@ on post-fs-data
     chown radio system /sys/devices/system/cpu/cpufreq/pegasusq/hotplug_lock
     chown radio system /sys/devices/system/cpu/busfreq/curr_freq
     chown radio system /sys/module/mali/parameters/mali_dvfs_control
+    chown radio system /sys/devices/platform/s5p-ehci/ehci_power
+    chown radio system /sys/devices/platform/s5p-ohci/ohci_power
     chown system radio /sys/bus/platform/devices/s5p-tmu/lot_id
     chmod 0660 /sys/power/state
     chmod 0660 /sys/power/wake_lock
