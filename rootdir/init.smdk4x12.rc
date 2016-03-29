@@ -21,6 +21,7 @@ on fs
 
     chown radio system /efs
     chmod 0771 /efs
+    restorecon_recursive /efs
 
 on post-fs-data
     mkdir /data/log 0775 system log
