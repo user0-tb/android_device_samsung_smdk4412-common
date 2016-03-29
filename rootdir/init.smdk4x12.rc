@@ -6,8 +6,7 @@ import /init.smdk4x12.usb.rc
 import /init.trace.rc
 
 on init
-
-# Support legacy paths
+    # Support legacy paths
     symlink /sdcard /mnt/sdcard
     symlink /sdcard /storage/sdcard0
 
@@ -15,6 +14,9 @@ on init
     symlink /efs /factory
     mkdir /preload
     mkdir /tombstones
+
+    mkdir /dev/timer_slack
+    mount cgroup none /dev/timer_slack timer_slack
 
 on fs
     mount_all /fstab.smdk4x12
